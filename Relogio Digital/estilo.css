@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #091921;
+    
+}
+
+center{
+    margin-top: 130px;
+}
+
+.titulo{
+    margin: 30px;
+}
+
+.titulo h1{
+    color: #ff9f1c;
+    font-size: 70px;
+    font-family: 'Play', sans-serif;
+}
+
+.relogio{
+    background-color: #ff9f1c;
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px 10px;
+    
+}
+
+.relogio .hora, .relogio .minutos, .relogio .segundos{
+    background-color:rgba(0, 0, 0, 0.732);
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.relogio span{
+    color: white;
+}
+
+.relogio .pontos{
+    font-size: 350px;
+    margin-top: -110px;
+}
+
+.relogio .num{
+    font-family:'Play', sans-serif;
+    font-size: 150px;
+    
+}
+
+@media screen and (max-width: 1044px) {
+    .relogio{
+        width: 700px;
+        height: 280px;
+        
+    }
+
+    .relogio .hora, .relogio .minutos, .relogio .segundos{
+        width: 140px;
+        height: 210px;
+    }
+
+    .relogio .pontos{
+        font-size: 245px;
+        margin-top: -80px;
+    }
+
+    .relogio .num{
+        font-size: 105px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .relogio{
+        width: 500px;
+        height: 200px;
+        border-radius: 20px ;
+    }
+
+    .relogio .hora, .relogio .minutos, .relogio .segundos{
+        width: 100px;
+        height: 150px;
+    }
+
+    .relogio .pontos{
+        margin-top: -50px;
+        font-size: 175px;
+    }
+
+   
+    .relogio .num{
+        font-size: 75px;
+    }
+}
